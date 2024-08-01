@@ -44,7 +44,7 @@ body {
   height: 32px;
   background-color: #ff007a;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -54,17 +54,18 @@ body {
   border-radius: 20px 20px 0 0;
   background-color: white;
   border-bottom: 4px solid #d9d9d9;
-  line-height: 32px;
+  line-height: 28px;
 }
 
 .bucket_title h1 {
   color: #ff007a;
   font-size: 24px;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 31px;
   line-height: 32px;
   display: inline-block;
   /* border-left: 8px solid; */
+  vertical-align: middle;
 }
 
 /* .bucketlist-container {
