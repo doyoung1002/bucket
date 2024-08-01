@@ -1,0 +1,63 @@
+body {
+  margin: unset;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.wrapper {
+  box-shadow: inset 0 0 20px red;
+  width: 960px;
+  margin: 60px auto;
+}
+
+.header {
+  box-shadow: inset 0 0 20px gold;
+}
+/* inline level은 width 개념이 없다 */
+/* inline level은 margin 좌우로만 적용이 된다. */
+/* inline level은 padding, border는 상하 공간을 차지하지 못하고, 그냥 벗어나게 된다. */
+.header .icon {
+  /* 태생이 inline level 요소인 a요소를 block level로 강제 */
+  /* 외부적으로 baseline에서 봤을때 inline인데 내부적으로 볼때 block -> inline-block 즉 inline으로 배치된 block*/
+  display: inline-block;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  /* line-height의 초기값은 normal이다. 이는 폰트 종류에 따라서 달라진다. 값을 줄때는 1.2 , 1.4 이런식으로 배수를 줘야 좋다. 위아래로 주게된다. */
+  line-height: 200px;
+  border-radius: 50%;
+}
+/* inline 요소를 가로로 배치를 할 때, vertical line은 baseline을 기준이다. */
+/* inline-block 내부에 텍스트가 있다면 텍스트에 baseline이 맞춰진다 이미지와 빈 텍스트의 경우는 하단으로 baseline으로 맞춰진다. */
+
+/* vertical-align : 전체 inline과 inline 간에 baseline 기준을 바꿔줌 */
+
+.logo {
+  background-image: url(./images/logo.png);
+  /* 텍스트랑 이미지가 겹쳐보일때, 만약에 텍스트를 삭제하면 콘텐츠가 삭제가 되어 baseline이 변경이 된다. */
+  text-indent: -9999px;
+  /* text-indent: -9999px; 들여쓰기, 안좋은 방법 */
+}
+
+.lemon {
+  /* background-image: url(./images/lemon.png); */
+}
+
+.orange {
+}
+
+.jamong {
+}
+
+.contents {
+  box-shadow: inset 0 0 20px purple;
+}
+
+.footer {
+  box-shadow: inset 0 0 20px gold;
+}
