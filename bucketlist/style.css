@@ -39,12 +39,14 @@ body {
   overflow: hidden;
 }
 
-.rectangle {
+.bucket_title h1::before {
+  content: ' ';
   width: 8px;
   height: 32px;
   background-color: #ff007a;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
+  margin-right: 31px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -61,16 +63,14 @@ body {
   color: #ff007a;
   font-size: 24px;
   font-weight: bold;
-  padding-left: 31px;
   line-height: 32px;
   display: inline-block;
-  /* border-left: 8px solid; */
   vertical-align: middle;
 }
 
-/* .bucketlist-container {
-  padding: 36px 38px 38px 38px;
-} */
+.bucketlist-container {
+  padding: 36px 40px 38px 38px;
+}
 
 .bucketlist-list li {
   color: #888;
@@ -79,14 +79,11 @@ body {
   padding: 15px 34px 15px 14px;
   border-radius: 10px;
   line-height: 1.25;
-  margin: 0 38px 14px 38px;
+  margin-top: 14px;
 }
 
-.bucketlist-list li:last-child {
-  margin-bottom: 38px;
-}
 .bucketlist-list li:first-child {
-  margin-top: 38px;
+  margin-top: 0;
 }
 
 .bucketlist-list li.check {
@@ -96,5 +93,5 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
   box-sizing: border-box;
-  margin: 14px 18px;
+  margin: 14px -20px 0 -20px;
 }
